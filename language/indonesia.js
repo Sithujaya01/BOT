@@ -74,39 +74,64 @@ exports.botNotAdmin = () => {
 exports.received = (pushname) => {
     return `
 Halo ${pushname}!
-Terima kasih telah melapor, laporanmu akan kami segera terima.`
+Thank you for reporting, we will receive your report soon`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `Error : file size is too big !`
 }
 
 exports.notNum = (q) => {
-    return `"${q}", bukan angka!`
+    return `"${q}", not numbers!`
 }
 exports.menunya = (salam, pushname, botname) =>{
-	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp. 
-Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
-lapor owner agar segera di perbaiki 🙏      
+	return`Hey Sir ! ${pushname} I'm JF_BOT beta ;) , 
+saya ${botname}, Powered by Jayarathne_Technical :).     
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `*Selamat ${salam} ${pushname}*
-*⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+    return `*Nice ${salam} ${pushname}*
+*⏰ Time Server : ${time}*
+*🥀 List-Menu JF_BOT :*
 
-╭─❒ 「 Bot Info 」 
+╭─❒ 「 Bot Info 🥀 」 
 ├ ${prefix}owner
 ├ ${prefix}rules
 ├ ${prefix}sc
 ├ ${prefix}ping
 ├ ${prefix}runtime
-├ ${prefix}botstatus
-╰❒ ${prefix}donate
+╰❒ ${prefix}botstatus
 
 
-╭─❒ 「 Owner 」 
+╭─❒ 「 Download 🥀 」 
+├ ${prefix}tiktok [link]
+├ ${prefix}tiktoknowm [link]
+├ ${prefix}tiktokwm [link]
+├ ${prefix}tiktokaudio [link]
+├ ${prefix}ytdl [link]
+├ ${prefix}play [query]
+├ ${prefix}ytmp3 [link]
+├ ${prefix}ytshortmp3 [link]
+├ ${prefix}ytmp4 [link]
+├ ${prefix}ytshorts [link]
+├ ${prefix}facebook [link]
+├ ${prefix}facebooksd [link]
+├ ${prefix}facebookhd [link]
+├ ${prefix}fbaudio [link]
+├ ${prefix}igstory [username]
+├ ${prefix}igdl [link]
+├ ${prefix}igphoto [link]
+├ ${prefix}igvideo [link]
+├ ${prefix}igreels [link]
+├ ${prefix}igtv [link]
+├ ${prefix}soundcloud [link]
+├ ${prefix}gitclone [link repo]
+├ ${prefix}gitrepo [username repo branch]
+├ ${prefix}mediafire [link]
+╰❒ ${prefix}twitter link
+
+
+╭─❒ 「 Owner 🍂」 
 ├ < evaluate
 ├ > evaluate
 ├ $ exec
@@ -130,11 +155,11 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}join [link]
 ├ ${prefix}self
 ├ ${prefix}public [only bot]
-├ ${prefix}del [reply pesan bot]
+├ ${prefix}del [reply massage bot]
 ╰❒ ${prefix}setppbot [reply image]
 
 
-╭─❒ 「 Database 」 
+╭─❒ 「 Database 🍂 」 
 ├ ${prefix}setcmd [reply stiker]
 ├ ${prefix}delcmd [reply stiker]
 ├ ${prefix}listcmd
@@ -142,13 +167,13 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}cekabsen
 ├ ${prefix}deleteabsen
 ├ ${prefix}absenstart
-├ ${prefix}addmsg [nama file]
-├ ${prefix}getmsg [nama file]
+├ ${prefix}addmsg [name file]
+├ ${prefix}getmsg [name file]
 ├ ${prefix}listmsg
-╰❒ ${prefix}delmsg [nama file]
+╰❒ ${prefix}delmsg [name file]
 
 
-╭─❒ 「 Group 」 
+╭─❒ 「 Group 🍂 」 
 ├ ${prefix}listonline
 ├ ${prefix}sider
 ├ ${prefix}wm packname|author
@@ -167,25 +192,25 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}tagall [text]
 ╰❒ ${prefix}hidetag [text]
 
-╭─❒ 「 Anime 」 
+╭─❒ 「 Anime 🥀 」 
 ├ ${prefix}quotesanime
 ├ ${prefix}anime [query]
 ├ ${prefix}manga [query]
 ╰❒ ${prefix}character [query]
 
-╭─❒ 「 Tag 」 
+╭─❒ 「 Tag 🍂 」 
 ├ ${prefix}stickertag
 ├ ${prefix}videotag [query]
 ├ ${prefix}vntag [query]
 ╰❒ ${prefix}imagetag [query]
 
-╭─❒ 「 Stalking 」 
+╭─❒ 「 Stalking 🥀 」 
 ├ ${prefix}igstalk [username]
 ├ ${prefix}ghstalk [username]
 ╰❒ ${prefix}ytstalk [channel]
 
 
-╭─❒ 「 Search 」 
+╭─❒ 「 Search 🥀 」 
 ├ ${prefix}ytsearch [query]
 ├ ${prefix}wallpaper [query]
 ├ ${prefix}wikimedia [query]
@@ -196,7 +221,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}pinterest [query]
 
 
-╭─❒ 「 Converter 」
+╭─❒ 「 Converter 🥀 」
 ├ ${prefix}toaudio [video]
 ├ ${prefix}tomp3 [video]
 ├ ${prefix}tovn [video]
@@ -207,7 +232,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒${prefix}toimg [reply sticker]
 
 
-╭─❒ 「 Image Effect 」 
+╭─❒ 「 Image Effect 🥀 」 
 ├ ${prefix}wanted [reply image/stiker]
 ├ ${prefix}utatoo [reply image/stiker]
 ├ ${prefix}unsharpen [reply image/stiker]
@@ -244,7 +269,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}beautiful [reply image/stiker]
 
 
-╭─❒ 「 Sticker Effect 」 
+╭─❒ 「 Sticker Effect 🥀 」 
 ├ ${prefix}jail [reply image/stiker]
 ├ ${prefix}red [reply image/stiker]
 ├ ${prefix}gay [reply image/stiker]
@@ -266,34 +291,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}invertgreyscale [reply image/stiker]
 
 
-╭─❒ 「 Download 」 
-├ ${prefix}tiktok [link]
-├ ${prefix}tiktoknowm [link]
-├ ${prefix}tiktokwm [link]
-├ ${prefix}tiktokaudio [link]
-├ ${prefix}ytdl [link]
-├ ${prefix}play [query]
-├ ${prefix}ytmp3 [link]
-├ ${prefix}ytshortmp3 [link]
-├ ${prefix}ytmp4 [link]
-├ ${prefix}ytshorts [link]
-├ ${prefix}facebook [link]
-├ ${prefix}facebooksd [link]
-├ ${prefix}facebookhd [link]
-├ ${prefix}fbaudio [link]
-├ ${prefix}igstory [username]
-├ ${prefix}igdl [link]
-├ ${prefix}igphoto [link]
-├ ${prefix}igvideo [link]
-├ ${prefix}igreels [link]
-├ ${prefix}igtv [link]
-├ ${prefix}soundcloud [link]
-├ ${prefix}gitclone [link repo]
-├ ${prefix}gitrepo [username repo branch]
-├ ${prefix}mediafire [link]
-╰❒ ${prefix}twitter link
-
-╭─❒ 「 Primbon 」
+╭─❒ 「 Horoscope 🥀」
 ├ ${prefix}nomorhoki 887435047326
 ├ ${prefix}artimimpi [query]
 ├ ${prefix}artinama [query]
@@ -325,7 +323,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}zodiak 
 ╰❒ ${prefix}shio [query]
 
-╭─❒ 「 Random Anime 」
+╭─❒ 「 Random Anime 🥀」
 ├ ${prefix}loli
 ├ ${prefix}neko
 ├ ${prefix}waifu
@@ -358,7 +356,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}dance
 ╰❒ ${prefix}cringe
 
-╭─❒ 「 Nsfw & Sfw 」
+╭─❒ 「 Nsfw & Sfw 🥀 」
 ├ ${prefix}ahegao
 ├ ${prefix}ass
 ├ ${prefix}bdsm
@@ -438,7 +436,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}cuddle
 ╰❒ ${prefix}zettai
 
-╭─❒ 「 Ephoto360 Menu 」
+╭─❒ 「 Ephoto360 Menu 🥀 」
 ├ ${prefix}youtubegold
 ├ ${prefix}youtubesilver
 ├ ${prefix}facebookgold
@@ -520,7 +518,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}rosebirthday
 
 
-╭─❒ 「 Textpro Menu 」
+╭─❒ 「 Textpro Menu 🥀 」
 ├ ${prefix}halloween2 text|text2
 ├ ${prefix}horror text|text2
 ├ ${prefix}game8bit text|text2
@@ -703,16 +701,15 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}metalg text
 
 
-╭─❒ 「 Others 」
-├ ${prefix}afk [reason]
-├ ${prefix}translate kode_bahasa text
+╭─❒ 「 Others 🥀 」
+├ ${prefix}translate code_language text
 ├ ${prefix}kalkulator [query]
 ├ ${prefix}smeme [text]
 ├ ${prefix}smeme2 [text|text]
 ├ ${prefix}memegen [text|text]
 ╰❒
 
-╭─❒ 「 Game Menu 」
+╭─❒ 「 Game Menu 🥀 」
 ├ ${prefix}kuismath
 ├ ${prefix}tebak [option]
 ├ ${prefix}tekateki
@@ -720,7 +717,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ ${prefix}caklontong
 
 
-╭─❒ 「 Asupan Menu 」
+╭─❒ 「 Asupan Menu 🥀 」
 ├ ${prefix}chika
 ├ ${prefix}delvira
 ├ ${prefix}ayu
@@ -744,7 +741,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}ukhty
 ╰❒ ${prefix}syifa
 
-╭─❒ 「 Telegram Sticker 」
+╭─❒ 「 Telegram Sticker 🥀 」
 ├ ${prefix}awoawo
 ├ ${prefix}benedict
 ├ ${prefix}chat
@@ -767,7 +764,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}kawan_sponsbob
 ╰❒ ${prefix}tyni
 ,
-╭─❒ 「 Random Cewe 」
+╭─❒ 「 Random Cewe 🥀 」
 ├ ${prefix}china 
 ├ ${prefix}indonesia 
 ├ ${prefix}malaysia 
@@ -780,97 +777,94 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}lisa  
 ╰❒ ${prefix}rose
 
-╭─❒ 「 TqTo 」 
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Mhankbarbar
-├ Nurutomo
-├ Rashid
-├ ZeeoneOfc
-├ Penyedia Module
-╰❒ And All Support
+╭─❒ 「 Thanks 🙂 」 
+├ *ZeeoneOfc
+├ *Nimesh Jayarathne
+├ *Dilshan Thiricana
+├ Gagana Paraya
+├ Jayashan
+├ Mr.Vihaga
+├ Sathsara
+├ Admin of @Nima_Official
+├ Gagana's Brothers
+├ Nenux
+╰❒ All members of JAYARATHNE_FUNERAL
     `
 }
 
 exports.rules = (prefix) => {
     return `
-*── 「 RULES AND FAQ 」 ──*
+*── 「 RULES AND FAQ 🍁 」 ──*
 
-1. Jangan spam bot. 🙅
-Sanksi: *❎ WARN/SOFT BLOCK*
+1. Do not Trigger. ⭕
+solution : *⚠️ WARN/SOFT BLOCK*
 
-2. Jangan telepon bot. ☎️
-Sanksi: *❎ SOFT BLOCK*
+2. Do not spam. ⭕
+solution: *⚠️ REMOVE YOU*
 
-3. Jangan mengeksploitasi bot.😖
-Sanksi: *PERMANENT BLOCK*
+3. Do not love Gagana.😖
+solution: *⚠️ PERMANENT BLOCK*
 
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
+🗯️ Bot not or slow to respond ?
+➡️ May be affected by network, signal, Gagana , Mahinda Mahaththaya , banned by Whatsapp and some origins. call admin or wait.
 
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
+🗯️ Where can I get the script from this bot?
+➡️ inbox @94778115292 or search github for Zeeoneofc.
 
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
+🗯️ Can I add to a group?
+➡️ sorry. I'm not public bot yet but you can ask @94778115292.
 
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
+🗯️ What's the prefix?
+➡️ you can use "." (dot) or "#" (hash).
 
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
+🗯️ Who is called "Gagana'
+➡️ Gagana is my .... , He is Big_boy 🤗 so I Love Gagana. "Gagana darana jaya sak nanva sinha thejasin rata rakna".
 
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
+If you already understand the rules, please type*${prefix}allmenu* to get started!
 
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
+⚠️ all JF_BOT policies and provisions are held by the owner and all policy changes, at any time the owner has the right to revoke, block users (*﹏*)
 
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
-😖🙏
+Thanks you for using jayarathne services and remeber that Gagana is mine.
+:)
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`Welcome Sir 🤗
 	
 ╭ 𝖭𝖺𝗆𝖺 :
 ├ 𝖴𝗆𝗎𝗋 :
 ├ 𝖦𝖾𝗇𝖽𝖾𝗋 :
 ├ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+╰❒ WELCOME ~`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
+	return`Nice :) come again >.<
 Goodbye`
 }
 exports.source = () =>{
-return`*------「 SOURCE CODE 」 ------*
+return`*------「 SOURCE CODE 🍒 」 ------*
 
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
+Base : Error :(
+Recode : https://wa.me/94778115292?text=he+he++Bot+.+.+.
 `
 }
 exports.tos = (ownernomer) => {
     return `
-*-------「 DONATE 」 -------*
+*-------「 DONATE 🍒 」 -------*
 
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
-
-Berapapun donasi kalian akan sangat berarti 👍
+He He No need donates but share us ;
 
 Thanks!
 
-Contact person Owner:
+Contact Jayarathne:
 wa.me/${ownernomer}
 
     `
 }
 
 exports.info = (prefix) =>{
-	return`╭─❒ 「 Bot Info 」 
+	return`╭─❒ 「 Bot Info 🥀 」 
 ├ ${prefix}owner
 ├ ${prefix}rules
 ├ ${prefix}sc
@@ -881,7 +875,7 @@ exports.info = (prefix) =>{
 `}
 
 exports.ownermenu = (prefix) =>{
-return`╭─❒ 「 Owner 」 
+return`╭─❒ 「 Owner 🍂 」 
 ├ < evaluate
 ├ > evaluate
 ├ $ exec
@@ -910,7 +904,7 @@ return`╭─❒ 「 Owner 」
 `}
 
 exports.database = (prefix) =>{
-	return`╭─❒ 「 Database 」 
+	return`╭─❒ 「 Database 🍂 」 
 ├ ${prefix}setcmd [reply stiker]
 ├ ${prefix}delcmd [reply stiker]
 ├ ${prefix}listcmd
@@ -925,7 +919,7 @@ exports.database = (prefix) =>{
 `}
 
 exports.group = (prefix) =>{
-	return`╭─❒ 「 Group 」 
+	return`╭─❒ 「 Group 🍂 」 
 ├ ${prefix}listonline
 ├ ${prefix}sider
 ├ ${prefix}wm packname|author
@@ -946,7 +940,7 @@ exports.group = (prefix) =>{
 `}
 
 exports.anime = (prefix) =>{
-	return`╭─❒ 「 Anime 」 
+	return`╭─❒ 「 Anime 🥀 」 
 ├ ${prefix}quotesanime
 ├ ${prefix}anime [query]
 ├ ${prefix}manga [query]
@@ -954,7 +948,7 @@ exports.anime = (prefix) =>{
 `}
 
 exports.tag = (prefix) =>{
-	return`╭─❒ 「 Tag 」 
+	return`╭─❒ 「 Tag 🍂 」 
 ├ ${prefix}stickertag
 ├ ${prefix}videotag [query]
 ├ ${prefix}vntag [query]
@@ -962,14 +956,14 @@ exports.tag = (prefix) =>{
 `}
 
 exports.stalk = (prefix) =>{
-	return`╭─❒ 「 Stalking 」 
+	return`╭─❒ 「 Stalking 🥀 」 
 ├ ${prefix}igstalk [username]
 ├ ${prefix}ghstalk [username]
 ╰❒ ${prefix}ytstalk [channel]
 `}
 
 exports.search = (prefix) =>{
-	return`╭─❒ 「 Search 」 
+	return`╭─❒ 「 Search 🥀 」 
 ├ ${prefix}ytsearch [query]
 ├ ${prefix}wallpaper [query]
 ├ ${prefix}wikimedia [query]
@@ -981,7 +975,7 @@ exports.search = (prefix) =>{
 `}
 
 exports.converter = (prefix) =>{
-	return`╭─❒ 「 Converter 」 
+	return`╭─❒ 「 Converter 🥀 」 
 ├ ${prefix}toaudio [video]
 ├ ${prefix}tomp3 [video]
 ├ ${prefix}tovn [video]
@@ -993,7 +987,7 @@ exports.converter = (prefix) =>{
 `}
 
 exports.effect = (prefix) =>{
-	return`╭─❒ 「 Image Effect 」 
+	return`╭─❒ 「 Image Effect 🥀 」 
 ├ ${prefix}wanted [reply image/stiker]
 ├ ${prefix}utatoo [reply image/stiker]
 ├ ${prefix}unsharpen [reply image/stiker]
@@ -1032,7 +1026,7 @@ exports.effect = (prefix) =>{
 
 //
 exports.effect2 = (prefix) =>{
-	return`╭─❒ 「 Sticker Effect 」 
+	return`╭─❒ 「 Sticker Effect 🥀 」 
 ├ ${prefix}jail [reply image/stiker]
 ├ ${prefix}red [reply image/stiker]
 ├ ${prefix}gay [reply image/stiker]
@@ -1056,7 +1050,7 @@ exports.effect2 = (prefix) =>{
 }
 
 exports.download = (prefix) =>{
-return`╭─❒ 「 Download 」 
+return`╭─❒ 「 Download 🥀 」 
 ├ ${prefix}tiktok [link]
 ├ ${prefix}tiktoknowm [link]
 ├ ${prefix}tiktokwm [link]
@@ -1086,7 +1080,7 @@ return`╭─❒ 「 Download 」
 }
 
 exports.ranime = (prefix) =>{
-	return`╭─❒ 「 Random Anime 」
+	return`╭─❒ 「 Random Anime 🥀 」
 ├ ${prefix}loli
 ├ ${prefix}neko
 ├ ${prefix}waifu
@@ -1122,7 +1116,7 @@ exports.ranime = (prefix) =>{
 }
 
 exports.nsfw = (prefix) =>{
-	return`╭─❒ 「 Nsfw & Sfw 」
+	return`╭─❒ 「 Nsfw & Sfw 🥀」
 ├ ${prefix}ahegao
 ├ ${prefix}ass
 ├ ${prefix}bdsm
@@ -1205,7 +1199,7 @@ exports.nsfw = (prefix) =>{
 }
 
 exports.textpro = (prefix) =>{
-	return`╭─❒ 「 Textpro Menu 」
+	return`╭─❒ 「 Textpro Menu 🥀 」
 ├ ${prefix}halloween2 text|text2
 ├ ${prefix}horror text|text2
 ├ ${prefix}game8bit text|text2
@@ -1391,7 +1385,7 @@ exports.textpro = (prefix) =>{
 
 
 exports.other = (prefix) =>{
-return`╭─❒ 「 Others 」
+return`╭─❒ 「 Others 🥀」
 ├ ${prefix}ttp [text]
 ├ ${prefix}attp [text]
 ├ ${prefix}afk [reason]
@@ -1403,7 +1397,7 @@ return`╭─❒ 「 Others 」
 `
 }
 exports.game = (prefix) =>{
-return`╭─❒ 「 Game Menu 」
+return`╭─❒ 「 Game Menu 🥀 」
 ├ ${prefix}kuismath
 ├ ${prefix}tebak [option]
 ├ ${prefix}tekateki
@@ -1412,7 +1406,7 @@ return`╭─❒ 「 Game Menu 」
 `
 }
 exports.asupan = (prefix) =>{
-return`╭─❒ 「 Asupan Menu 」
+return`╭─❒ 「 Asupan Menu 🥀 」
 ├ ${prefix}chika
 ├ ${prefix}delvira
 ├ ${prefix}ayu
@@ -1438,7 +1432,7 @@ return`╭─❒ 「 Asupan Menu 」
 `
 }
 exports.cecan = (prefix) =>{
-return`╭─❒ 「 Random Cewe 」
+return`╭─❒ 「 Random Cewe 🥀 」
 ├ ${prefix}china 
 ├ ${prefix}indonesia 
 ├ ${prefix}malaysia 
@@ -1453,24 +1447,24 @@ return`╭─❒ 「 Random Cewe 」
 `
 }
 
-exports.tqto = () =>{
-	return`╭─❒ 「 TqTo 」 
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Mhankbarbar
-├ Nurutomo
-├ Rashid
-├ ZeeoneOfc
-├ Penyedia Module
-╰❒ And All Support
+exports.thanks = () =>{
+	return`╭─❒ 「 Thanks 🙂 」 
+├ *ZeeoneOfc
+├ *Nimesh Jayarathne
+├ *Dilshan Thiricana
+├ Gagana Paraya
+├ Jayashan
+├ Mr.Vihaga
+├ Sathsara
+├ Admin of @Nima_Official
+├ Gagana's Brothers
+├ Nenux
+╰❒ All members of JAYARATHNE_FUNERAL
 `
 }
 
 exports.primbonmenu = (prefix) =>{
-	return`╭─❒ 「 Primbon 」
+	return`╭─❒ 「 Horoscope 🥀 」
 ├ ${prefix}nomorhoki 887435047326
 ├ ${prefix}artimimpi [query]
 ├ ${prefix}artinama [query]
@@ -1505,7 +1499,7 @@ exports.primbonmenu = (prefix) =>{
 }
 
 exports.ephotomenu = (prefix) =>{
-	return`╭─❒ 「 Ephoto360 Menu 」
+	return`╭─❒ 「 Ephoto360 Menu 🥀 」
 ├ ${prefix}youtubegold
 ├ ${prefix}youtubesilver
 ├ ${prefix}facebookgold
@@ -1588,7 +1582,7 @@ exports.ephotomenu = (prefix) =>{
 }
 
 exports.stcmenu = (prefix) =>{
-	return`╭─❒ 「 Telegram Sticker 」
+	return`╭─❒ 「 Telegram Sticker 🥀 」
 ├ ${prefix}awoawo
 ├ ${prefix}benedict
 ├ ${prefix}chat
