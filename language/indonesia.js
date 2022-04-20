@@ -1,74 +1,74 @@
 exports.private = () =>{
-	return`Fitur hanya bisa di gunakan di private chat`
+	return`The feature can only be used in private chat 🚫 ;)`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `processing ;...)`
 }
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `🍂 Done. Nice`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `⚠️ Error ;(`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `⚠️ Link error ;(`
 }
 exports.media = () => {
-    return `Silahkan pilih media yang ingin kamu download`
+    return `Select Media Please ;-)`
 }
 exports.replyImg = (prefix, command) => {
-    return `Kirim/Reply Foto Dengan Caption ${prefix + command}`
+    return `Send/Reply Photo with Caption ${prefix + command}`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `Incorrect format 🚫 Please check usage instructions in *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `❎ Harap masukkan pesan yang ingin disampaikan!`
+    return `🚫 Please enter the message you want to convey!`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
+    return `❎ Command *${cmd}* is not listed in *${prefix}allmenu*`
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner`
+    return `This Command is only for 'Jayarathne' 🚫🙂`
 }
 
 exports.doneOwner = () => {
-    return `✅  ️Sudah selesai, Owner ~`
+    return `🙂🍂 Done. Nice sir`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `👥  Che feature can only be used in Group chat 🚫 ;)`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `🚫 Only JF_TEAM members :)`
 }
 
 exports.nhFalse = () => {
-    return `Kode tidak valid!`
+    return `Invaild code!`
 }
 
 exports.listBlock = (blockNumber) => {
-    return `*── 「 HALL OF SHAME 」 ──*
+    return `*── 「 BLOCK LIST 」 ──*
     
-Total diblokir: *${blockNumber.length}* user\n`
+Total blocked: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `user not an admin :(`
 }
 
 exports.adminAlready = () => {
-    return `❎ Tidak  dapat mem-promote user yang merupakan admin!`
+    return `Already an admin :)`
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `I'm not an ~Admin~ :(`
 }
 
 exports.received = (pushname) => {
